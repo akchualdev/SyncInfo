@@ -75,7 +75,10 @@ def build_headers(token):
         'Authorization': f"Bearer {token}",
         'X-Unity-Version': "2018.4.11f1",
         'X-GA': "v1 1",
-        'ReleaseVersion': RELEASE_VERSION
+        'ReleaseVersion': RELEASE_VERSION,
+        'Host': "client.us.freefiremobile.com",
+        'X-Forwarded-For': '127.0.0.1',
+        'X-Real-IP': '127.0.0.1'
     }
 
 async def GetAccountInformation(ID, UNKNOWN_ID, endpoint):
