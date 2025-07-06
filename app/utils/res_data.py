@@ -65,7 +65,6 @@ def get_url(region):
         return "https://clientbp.ggblueshark.com"
 
 def build_headers(token):
-    """Build HTTP headers for API request"""
     return {
         'User-Agent': "Dalvik/2.1.0 (Linux; U; Android 13; A063 Build/TKQ1.221220.001)",
         'Connection': "Keep-Alive",
@@ -76,9 +75,10 @@ def build_headers(token):
         'X-Unity-Version': "2018.4.11f1",
         'X-GA': "v1 1",
         'ReleaseVersion': RELEASE_VERSION,
-        'Host': "client.us.freefiremobile.com",
-        'X-Forwarded-For': '127.0.0.1',
-        'X-Real-IP': '127.0.0.1'
+        # Add these
+        'X-Forwarded-For': '103.108.144.1',  # Bangladesh IP
+        'X-Real-IP': '103.108.144.1',
+        'CF-Connecting-IP': '103.108.144.1'
     }
 
 async def GetAccountInformation(ID, UNKNOWN_ID, endpoint):
