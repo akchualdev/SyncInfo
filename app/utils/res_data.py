@@ -70,16 +70,11 @@ def build_headers(token):
         'Connection': "Keep-Alive",
         'Accept-Encoding': "gzip",
         'Content-Type': "application/octet-stream",
-        'Expect': "100-continue",
+        #'Expect': "100-continue",
         'Authorization': f"Bearer {token}",
         'X-Unity-Version': "2018.4.11f1",
         'X-GA': "v1 1",
-        'ReleaseVersion': RELEASE_VERSION,
-        # Indian IP addresses for spoofing
-        'X-Forwarded-For': '117.239.195.45',  # India IP (Mumbai)
-        'X-Real-IP': '117.239.195.45',
-        'CF-Connecting-IP': '117.239.195.45',
-        'X-Originating-IP': '117.239.195.45'
+        'ReleaseVersion': RELEASE_VERSION
     }
 
 async def GetAccountInformation(ID, UNKNOWN_ID, endpoint):
