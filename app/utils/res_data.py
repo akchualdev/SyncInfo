@@ -74,11 +74,7 @@ def build_headers(token):
         'Authorization': f"Bearer {token}",
         'X-Unity-Version': "2018.4.11f1",
         'X-GA': "v1 1",
-        'ReleaseVersion': RELEASE_VERSION,
-        # Add these
-        'X-Forwarded-For': '103.108.144.1',  # Bangladesh IP
-        'X-Real-IP': '103.108.144.1',
-        'CF-Connecting-IP': '103.108.144.1'
+        'ReleaseVersion': RELEASE_VERSION
     }
 
 async def GetAccountInformation(ID, UNKNOWN_ID, endpoint):
