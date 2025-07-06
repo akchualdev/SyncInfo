@@ -70,7 +70,7 @@ def build_headers(token):
         'Connection': "Keep-Alive",
         'Accept-Encoding': "gzip",
         'Content-Type': "application/octet-stream",
-        #'Expect': "100-continue",
+        'Expect': "100-continue",
         'Authorization': f"Bearer {token}",
         'X-Unity-Version': "2018.4.11f1",
         'X-GA': "v1 1",
