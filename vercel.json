@@ -11,11 +11,5 @@
             "dest": "main.py"
         }
     ],
-    "functions": {
-        "main.py": {
-            "runtime": "python3.9",
-            "regions": ["bom1"],
-            "maxDuration": 30
-        }
-    }
+    "regions": ["bom1"]
 }
