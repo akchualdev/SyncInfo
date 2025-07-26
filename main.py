@@ -8,7 +8,9 @@ import asyncio
 app = Flask(__name__)
 CORS(app)
 
-
+@app.route("/")
+def home():
+    return "API is Alive with new!", 200
 @app.route('/info')
 def get_account_info():
     uid = request.args.get('uid')
