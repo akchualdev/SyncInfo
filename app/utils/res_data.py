@@ -11,7 +11,7 @@ import os
 # Constants
 MAIN_KEY = base64.b64decode('WWcmdGMlREV1aDYlWmNeOA==')
 MAIN_IV = base64.b64decode('Nm95WkRyMjJFM3ljaGpNJQ==')
-RELEASE_VERSION = "OB49"
+RELEASE_VERSION = "OB50"
 
 # MongoDB connection
 MONGO_URI = os.getenv("MONGO_URI")
